@@ -14,10 +14,6 @@ source:
   url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ bundle_type }}
   sha256: {{ sha256 }}
 
-build:
-  skip: True  # [win]
-  number: 2
-
 requirements:
   build:
     - {{ compiler('c') }}
